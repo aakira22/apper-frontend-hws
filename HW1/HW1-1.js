@@ -1,4 +1,4 @@
-var sampleArray = [5,3,2,10,'a']
+var sampleArray = [5,3,2,10]
 
 function transform(intArray){
 
