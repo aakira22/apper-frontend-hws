@@ -1,3 +1,9 @@
+/*
+Write a function named transform that accepts an array of integers, 
+and returns an array in which all the elements are squared and sorted in ascending order. 
+Name this file HW1-1.js.
+*/
+
 function transform(intArray){
 
   //integer array checker
