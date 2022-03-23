@@ -1,5 +1,3 @@
-var sampleArray = [5,3,2,10]
-
 function transform(intArray){
 
   //integer array checker
@@ -16,6 +14,8 @@ function transform(intArray){
   }
 
 }
+
+var sampleArray = [5,3,2,10]
 
 a = transform(sampleArray)
 
