@@ -8,7 +8,7 @@ function transform(intArray){
 
   //integer array checker
   if (!intArray.every(element => typeof(element)=='number')){
-    console.log('Invalid input.')
+    console.log('Invalid input. Array elements must be a number.')
     return null
   } 
 
