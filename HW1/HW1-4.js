@@ -6,4 +6,24 @@ Examples include racecar, deified, civic, radar, uwu, et al. Name this file HW1-
 
 function isPalindrome(input){
 
+    //string input checker
+    if (typeof(input)!='string'){
+        console.log('Invalid input. Input must be a string.')
+        return null
+    } 
+
+    else {
+        if (input.length <= 1){
+            return true
+        }
+        if (input[0]!=input[input.length-1]){
+            return false
+        }
+        word = input.slice(1,input.length-1)
+        return isPalindrome(word)
+    }
 }
+
+var a = 'racecar'
+b = isPalindrome(a)
+console.log(b)
