@@ -26,4 +26,4 @@ function isPalindrome(input){
 
 var a = 'racecar'
 b = isPalindrome(a)
-console.log(b)
+console.log(b)  //true

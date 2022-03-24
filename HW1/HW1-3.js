@@ -23,4 +23,4 @@ function reverse(input){
 
 var a = 'joseph'
 b = reverse(a)
-console.log(b)
+console.log(b)  //hpesoj

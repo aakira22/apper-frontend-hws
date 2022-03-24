@@ -24,4 +24,4 @@ function transform(intArray){
 
 var sampleArray = [5,-3,2,10]
 a = transform(sampleArray)
-console.log('Returned Array: '+a)
+console.log('Returned Array: '+a) //Returned Array: 4,9,25,100
