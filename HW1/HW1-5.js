@@ -14,7 +14,7 @@ function convertToVowels(input){
     else{
         let vowels = ['a','e','i','o','u']
         splitted = input.split('')
-        newArr = splitted.filter(item => vowels.includes(item))
+        newArr = splitted.filter(element => vowels.includes(element))
         filteredVowels = newArr.join('')
         return filteredVowels
     }
