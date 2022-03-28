@@ -7,46 +7,58 @@ Another challenge would be to implement this without using JavaScript arrays.
 Name this file HW1-2.js.
 */
 
-// class Queue {
+class Stack {
   
-//     constructor(value)  {
-//       this.value = [];
-//     }
+    constructor(value)  {
+      this.value = [];
+    }
   
-//     push(value){
-//       //guard: if input is not a string
-//       if (typeof(value) == 'string'){
-//         this.value.push(value);
-//       } else 
-//         console.log('Invalid input.');
-//     }
+    push(value){
+      //guard: if input is not a string
+      if (typeof(value) == 'string'){
+        this.value.push(value);
+      } else 
+        console.log('Invalid input.')
+        return 'Invalid input.'
+    }
   
-//     pop(){
-//       //code: remove first item
-//       //guard: if its empty
-//       if (this.value.length==0){
-//         console.log('Queue is empty.')
-//       } else {
-//         this.value.shift();
-//       }
-//     }
+    pop(){
+      //code: remove last item
+      //guard: if its empty
+      if (this.value.length<=0){
+          console.log('Stack is empty.')
+        return 'Stack is empty.'
+      } else {
+        this.value.pop();
+      }
+    }
     
-//     check(){
-//       console.log(this.value);
-//     }
+    check(){
+      console.log(this.value);
+      return this.value
+    }
 
-//     peek(){
+    peek(){
+        if (this.value.length <=0){
+            console.log( 'Stack is empty.')
+            return 'Stack is empty.'
+        } else{
+            console.log(this.value[this.value.length-1])
+            return this.value[this.value.length-1]
+        }
+    }
 
-//     }
-
-//   }
+  }
   
-//   const my_queue = new Queue()
-//   my_queue.push('Milk')
-//   my_queue.push('Eggs')
-//   my_queue.check() // ['Milk', 'Eggs']
-//   my_queue.pop()
-//   my_queue.check()            // ['Eggs']
-//   my_queue.pop()
-//   my_queue.check()            // []
-//   my_queue.pop() //Queue is empty.
+  const my_stack = new Stack()
+  my_stack.push('Milk')
+  my_stack.push(100)
+  my_stack.push('Eggs')
+  my_stack.check() // ['Milk', 'Eggs']
+  my_stack.peek() //['Eggs']
+  my_stack.pop()
+  my_stack.check()            // ['Milk']
+  my_stack.pop()
+  my_stack.check()            // []
+  my_stack.pop() //Stack is empty.
+

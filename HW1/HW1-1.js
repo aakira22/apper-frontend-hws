@@ -22,6 +22,6 @@ function transform(intArray){
 }
 
 
-var sampleArray = [5,-3,2,10]
-a = transform(sampleArray)
-console.log('Returned Array: '+a) //Returned Array: 4,9,25,100
+const nums = [4,9,5,3,8]
+const sortedSquaredNums = transform(nums) 
+console.log(sortedSquaredNums) // [9,16,25,64,81]

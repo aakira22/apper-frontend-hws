@@ -12,7 +12,7 @@ function convertToVowels(input){
     } 
 
     else{
-        let vowels = ['a','e','i','o','u']
+        const vowels = ['a','e','i','o','u','A','E','I','O','U']
         splitted = input.split('')
         newArr = splitted.filter(element => vowels.includes(element))
         filteredVowels = newArr.join('')
@@ -20,6 +20,7 @@ function convertToVowels(input){
     }
 }
 
-a = 'hello world'
-b = convertToVowels(a)
-console.log(b) //eoo
+
+const word = 'thisissomeword'
+const wordWithOnlyVowels = convertToVowels(word) 
+console.log(wordWithOnlyVowels) // iioeo
